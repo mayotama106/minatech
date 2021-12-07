@@ -108,17 +108,12 @@ h1 {
   margin: 10px 0 !important;
 }
 
-
-.green-border {
-  border-left: 4px solid #04AA6D;
-}
-
 .mina-round, .mina-round-medium {
   border-radius: 5px;
 }
 
 .tryit-button {
-  background-color: #04AA6D;
+  background-color: #F9C61F;
   color: white;
   border-radius: 25px;
   font-size: 18px;
@@ -126,7 +121,17 @@ h1 {
 }
 
 .tut-button {
-  background-color: #04AA6D;
+  background-color: #F9C61F;
+  color: whitesmoke;
+  font-size: 18px;
+  margin: auto;
+  display: block;
+  width: 200px;
+  border-radius: 25px;
+}
+
+.tut-button.black {
+  background-color: #282A35;
   color: white;
   font-size: 18px;
   margin: auto;
@@ -140,18 +145,19 @@ h1 {
 }
 
 .tut-button:hover,.tryit-button:hover,.exercise-button:hover,#getdiploma a:hover {
-  background-color: #282A35 !important;
+  opacity: .8;
+  background-color: #F9C61F!important;
   color:white!important;
 }
 
 .bar-item-hover:hover {
-  background-color: #282A35!important;
-  color:white!important;
+  background-color: #F9C61F!important;
+  color:black!important;
 }
 
 .bar-icon-hover:hover,.fa-logo:hover {
   background-color: white !important;
-  color:#282A35!important;
+  color:#059862!important;
 }
 
 .mystyle,.mystyle:hover {
@@ -161,7 +167,7 @@ h1 {
 
 .closenav_span:hover {
   background-color: #282A35!important;
-  color: #282A35!important;
+  color: #059862!important;
 }
 
 .ref-button {
@@ -191,7 +197,7 @@ h1 {
 
 .grey-color {
   background-color: #E7E9EB;
-  color: black
+  color: black;
 }
 
 .exercise-button {
@@ -201,19 +207,7 @@ h1 {
   opacity:0.97;
 }
 
-#minaloginbtn {
-  width:70px;
-  background-color:#04AA6D;
-  color:white;
-  border-radius:25px;
-  font-size:12px;
-  line-height:2;
-  display:none;
-}
 
-#loginactioncontainer {
-  margin-left:0;
-}
 @media screen and (min-width:601px) {
   #navbtn_menu {
     display: block;
@@ -324,7 +318,7 @@ h1 {
 #getdiploma a {
   border-radius: 50px;
   font-size: 18px;
-  background-color: #04AA6D;
+  background-color: #F9C61F;
   padding: 17px 55px
 }
 
@@ -625,8 +619,8 @@ h1 {
 
 <body style="position:relative;min-height:100%;font-family: 'Source Sans Pro', sans-serif;">
 
-<div style='display:none;position:absolute;z-index:6;top:75px;right:0;height:75px;padding-top:22px;padding-right:20px;padding-left:20px;background-color:#04AA6D;' id='googleSearch'><div class='gcse-search'></div></div>
-<div style='display:none;position:absolute;z-index:5;top:75px;right:0;height:75px;padding-right:15px;background-color:#04AA6D;text-align:right;padding-top:25px;' id='google_translate_element'></div>
+<div style='display:none;position:absolute;z-index:6;top:75px;right:0;height:75px;padding-top:22px;padding-right:20px;padding-left:20px;background-color:#F9C61F;' id='googleSearch'><div class='gcse-search'></div></div>
+<div style='display:none;position:absolute;z-index:5;top:75px;right:0;height:75px;padding-right:15px;background-color:#F9C61F;text-align:right;padding-top:25px;' id='google_translate_element'></div>
 
 <div class="mina-bar mina-card-2 notranslate" style="padding-left:12px;padding-right:16px;">
   <a href="" class="mina-bar-item mina-button mina-hover-none mina-left mina-padding-16" title="Home" style="width:300px; margin-top: 5px;">
@@ -662,7 +656,7 @@ h1 {
     <a class="mina-button mina-block" style="font-size:22px;" onclick="open_xs_menu('exercises')" href="javascript:void(0);">Exercises <i class='fa fa-caret-down'></i></a>
     <div id="sectionxs_exercises" class="mina-left-align mina-show" style="background-color:#282A35;color:white;"></div>
     <a class="mina-button mina-block" style="font-size:22px;" href="/cert/default.asp" target="_blank">Paid Courses</a>
-<!--    <a class="mina-button mina-block mina-round bar-item-hover" style="font-size:22px;background-color:#04AA6D;color:white;" href="https://profile.minaschools.com/log-in?redirect_url=https%3A%2F%2Fmy-learning.minaschools.com" target="_blank">Log in</a>
+<!--    <a class="mina-button mina-block mina-round bar-item-hover" style="font-size:22px;background-color:#F9C61F;color:white;" href="https://profile.minaschools.com/log-in?redirect_url=https%3A%2F%2Fmy-learning.minaschools.com" target="_blank">Log in</a>
 -->
 
   </div>
@@ -729,7 +723,7 @@ h1 {
     <div class="mina-col l6 mina-center" style="padding:3%;">
       <h1 style="font-size:85px;font-weight:700;margin-top:20px!important;">まずはここから</h1>
       <p style="font-size:20px; line-height: 2; margin-bottom: 40px;">プログラミングとはなんなのか<br>どういったことができるようになるのかを確認</p>
-      <a href="/html/default.asp" class="mina-button tut-button" style="margin-bottom:2px;">ここをクリック</a><br>
+      <a href="/html/default.asp" class="mina-button tut-button" style="margin-bottom:2px;">始める</a><br>
     </div> 
     <div class="mina-col l6" style="padding:3%">
       <div class="mina-hide-small grey-color mina-card-2 mina-round" style="padding:16px;">
@@ -754,7 +748,7 @@ h1 {
     <div class="mina-col l6 mina-center" style="padding:3%">
       <h1 style="font-size:100px;font-weight:700">JavaScript</h1>
       <p style="font-size:20px; margin-bottom: 40px;">web上で動くアプリケーションを作ってみる</p>
-      <a href="" class="mina-button mina-block tut-button">ここをクリック</a><br>
+      <a href="" class="mina-button mina-block tut-button black">始める</a><br>
     </div>
     <div class="mina-col l6" style="padding:3%">
       <!-- sample code image -->

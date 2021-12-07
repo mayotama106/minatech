@@ -140,18 +140,18 @@ h1 {
 }
 
 .tut-button:hover,.tryit-button:hover,.exercise-button:hover,#getdiploma a:hover {
-  background-color: #059862 !important;
+  background-color: #282A35 !important;
   color:white!important;
 }
 
 .bar-item-hover:hover {
-  background-color: #04AA6D!important;
+  background-color: #282A35!important;
   color:white!important;
 }
 
 .bar-icon-hover:hover,.fa-logo:hover {
   background-color: white !important;
-  color:#059862!important;
+  color:#282A35!important;
 }
 
 .mystyle,.mystyle:hover {
@@ -161,7 +161,7 @@ h1 {
 
 .closenav_span:hover {
   background-color: #282A35!important;
-  color: #059862!important;
+  color: #282A35!important;
 }
 
 .ref-button {
@@ -803,11 +803,88 @@ h1 {
  <div class="mina-container">
   <a class="mina-bar-item mina-button mina-hover-white mina-xlarge mina-round mina-right topnav-some" target="_blank" href="https://discord.gg/6Z7UaRbUQM" title='Join the minaschools communuity on Discord'><i class='fa'>&#xe807;</i></a>
  </div>
- <pclass="">Copyright minatech 2021</pclass=>
+ <a href="" class="">Copyright</a></p>
  </div>
 </footer>
 
 <!-- END MAIN -->
 </div>
+
+<script>
+function openLangTab(evtEd, codeName) {
+  var indexEditor, proglanguage, progtablinks;
+  proglanguage = document.getElementsByClassName("proglang");
+  for (indexEditor = 0; indexEditor < proglanguage.length; indexEditor++) {
+    proglanguage[indexEditor].style.display = "none";
+  }
+  progtablinks = document.getElementsByClassName("codeeditorbr-tablink");
+  for (indexEditor = 0; indexEditor < proglanguage.length; indexEditor++) {
+    progtablinks[indexEditor].className = progtablinks[indexEditor].className.replace(" c-grey", "");
+  }
+  document.getElementById(codeName).style.display = "block";
+  evtEd.currentTarget.className += " c-grey";
+}
+
+function mina_open() {
+  var x = document.getElementById("myAccordion");
+  if (x.style.display === 'none') {
+    x.style.display = 'block';
+    if (document.getElementById("navbtn_menu")) {
+      document.getElementById("navbtn_menu").getElementsByTagName("i")[0].style.display = "none";
+      document.getElementById("navbtn_menu").getElementsByTagName("i")[1].style.display = "inline";
+    }
+  } else {
+    x.style.display = 'none';
+    if (document.getElementById("navbtn_menu")) {
+      document.getElementById("navbtn_menu").getElementsByTagName("i")[0].style.display = "inline";
+      document.getElementById("navbtn_menu").getElementsByTagName("i")[1].style.display = "none";
+    }
+  }
+}
+function mina_close() {
+  document.getElementById("myAccordion").style.display = "none";
+}
+function open_xs_menu(x) {
+  if (document.getElementById("sectionxs_" + x).innerHTML == "") {
+    document.getElementById("sectionxs_" + x).innerHTML = document.getElementById("nav_" + x).innerHTML;
+  } else {
+    document.getElementById("sectionxs_" + x).innerHTML = "";
+  }
+}
+function mina_open_nav(x) {
+  if (document.getElementById("nav_" + x).style.display == "block") {
+    mina_close_nav(x);
+  } else {
+    mina_close_nav("tutorials");
+    mina_close_nav("references");
+    mina_close_nav("exercises");
+    document.getElementById("nav_" + x).style.display = "block";
+    if (document.getElementById("navbtn_" + x)) {
+      document.getElementById("navbtn_" + x).getElementsByTagName("i")[0].style.display = "none";
+      document.getElementById("navbtn_" + x).getElementsByTagName("i")[1].style.display = "inline";
+      document.getElementById("navbtn_" + x).classList.add("mystyle");
+    } 
+    if (x == "search") {
+      if (document.getElementById("gsc-i-id1")) {document.getElementById("gsc-i-id1").focus(); }
+    }
+  }
+}
+function mina_close_all_nav() {
+  mina_close_nav("tutorials");
+  mina_close_nav("references");
+  mina_close_nav("exercises");
+  mina_close();
+}
+function mina_close_nav(x) {
+  document.getElementById("nav_" + x).style.display = "none";
+  if (document.getElementById("navbtn_" + x)) {
+    document.getElementById("navbtn_" + x).getElementsByTagName("i")[0].style.display = "inline";
+    document.getElementById("navbtn_" + x).getElementsByTagName("i")[1].style.display = "none";
+    document.getElementById("navbtn_" + x).classList.remove("mystyle");
+  }
+}
+
+</script>
+
 </body>
 </html>

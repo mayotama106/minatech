@@ -157,7 +157,7 @@
           <hr>
           <h2></h2>
           <h2>実践＆クイズ</h2>
-          <p>こちらは実践問題の例です。下の緑のボタンから回答を確認することができるので、困ったらみてください</p>
+          <p>こちらは実践問題の例です。下の緑のボタンから回答を確認することができます</p>
           <div autocomplete="off" id="mina-exerciseform" action="exercise.asp?filename=exercise_JavaScript_attributes1" method="post" target="_blank">
             <h3 style="display: flex; align-items: center; margin-bottom: 20px;">04: 空欄を埋めてください
               <button id="check_btn_00"onclick="toggle_answear('00')" class="mina-btn" style="margin-left: auto;">答え合わせ</button>
@@ -165,30 +165,30 @@
           <div class="exercisewindow">
           <p>空白に入る文字を入れてください</p>
           <div class="exerciseprecontainer">
-            &lt;button onclick=&quot;myFunction()&quot;&gt;Click Me!&lt;/button&gt;<br>
+            &lt;button onclick=&quot;hello()&quot;&gt;アイサツ&lt;/button&gt;<br>
+            &lt;p id=&quot;demo&quot;&gt;&lt;/p&gt;
+            <br>
+            <br>
             &lt;script&gt;<br>
-            function myFunction() {<br><br>
-              // id:demoを持つ要素を取得する<br>
-                &nbsp; let x = <input name="ex1" style="width: auto;">.getElementById(&quot;demo&quot;);<br><br>
-              // id:demoを持つ要素の文字の大きさを25pxにする<br>  
-            &nbsp; x.style.fontSize = &quot;25px&quot;; <br><br>
-            // id:demoを持つ要素の文字色をredにする<br>  
-            &nbsp; x.style.color = &quot;red&quot;; <br>}<br><br>
+            function hello() {<br>
+                &nbsp; let hello = <input name="ex2-1" style="width: 100px;">.getElementById(&quot;demo&quot;);<br>
+            &nbsp; hello.textContent = &quot;こんにちは！&quot;; <br>
+            &nbsp; hello.style.fontSize = &quot;50px;&quot; <br>}<br>
             &lt;/script&gt;
           </div>
           <br>
           <div class="exerciseprecontainer" id="check_00" style="display: none;">
             <h2>答え</h2>
-            <p>------------------------------------------------------------------------</p>
-            &lt;button onclick=&quot;myFunction()&quot;&gt;Click Me!&lt;/button&gt;<br>
+            <hr style="border-style: dashed; border-color: #333;">
+            &lt;button onclick=&quot;hello()&quot;&gt;アイサツ&lt;/button&gt;<br>
+            &lt;p id=&quot;demo&quot;&gt;&lt;/p&gt;
+            <br>
+            <br>
             &lt;script&gt;<br>
-            function myFunction() {<br><br>
-              // id:demoを持つ要素を取得する<br>
-                &nbsp; let x = <span style="color: #059862;">doucument</span>.getElementById(&quot;demo&quot;);<br><br>
-              // id:demoを持つ要素の文字の大きさを25pxにする<br>  
-            &nbsp; x.style.fontSize = &quot;25px&quot;; <br><br>
-            // id:demoを持つ要素の文字色をredにする<br>  
-            &nbsp; x.style.color = &quot;red&quot;; <br>}<br><br>
+            function hello() {<br>
+                &nbsp; let hello = <span style="color: #059862;">document</span>.getElementById(&quot;demo&quot;);<br>
+            &nbsp; hello.textContent = &quot;こんにちは！&quot;; <br>
+            &nbsp; hello.style.fontSize = &quot;50px;&quot; <br>}<br>
             &lt;/script&gt;
           </div>
           </div>

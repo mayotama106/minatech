@@ -29,7 +29,6 @@
       <a class="mina-bar-item mina-button mina-hide-small barex bar-item-hover mina-padding-24 c-hide-800" href="javascript:void(0)" onclick="mina_open_nav('')" id="navbtn_exercises" title="Exercises" style="width:70px">tips <i class='fa fa-caret-down' style="font-size:20px;"></i><i class='fa fa-caret-up' style="display:none"></i></a>
     
       <a class="mina-bar-item mina-button bar-item-hover mina-padding-24" href="javascript:void(0)" onclick="mina_open()" id="navbtn_menu" title="Menu" style="width:93px">Menu <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style="display:none"></i></a>
-    
     </div>
     
     <nav id="nav_tutorials" class="mina-hide-small navex" style="position:absolute;background-color:#282A35;color:white;padding-bottom:60px;">
@@ -119,77 +118,118 @@
     <div class='mina-main mina-light-grey' id='belowtopnav' style='margin-left:220px; margin-bottom: 80px;'>
       <div class='mina-row mina-white'>
         <div class='mina-col l10 m12' id='main' style="margin:20px 0 0 0; margin-left: 90px;">
-          <h1>JavaScriptとは</h1>
-          <div class="mina-clear nextprev" style="margin-top: 40px;">
+          <h1>値の評価と表示</h1>
+          <div class="mina-clear nextprev" style="margin-top: 40px; margin-bottom: 40px;">
           </div>
           <h3>まずはこちらをチェック</h3>
-          <div class="mina-panel mina-info intro" style="margin-bottom: 40px;">
-            <h2><a href="https://jsprimer.net/basic/introduction/" target="blank">https://jsprimer.net/basic/introduction/</a></h2>
+          <div class="mina-panel mina-info intro">
+            <h2><a href="https://jsprimer.net/basic/read-eval-print/" target="blank">https://jsprimer.net/basic/read-eval-print/</a></h2>
           </div>
           <hr>
           <h2>クイズ</h2>
           <div autocomplete="off" id="mina-exerciseform" action="exercise.asp?filename=exercise_JavaScript_attributes1" method="post" target="_blank">
-            <h3 style="display: flex; align-items: center; margin-bottom: 20px;">01: 空欄を埋めてください
-              <button id="check_btn_01" onclick="toggle_answear('01')" class="mina-btn" style="margin-left: auto;">答え合わせ</button>
+            <h3 style="display: flex; align-items: center; margin-bottom: 20px;">01: 空欄を埋めてみよう
+              <button id="check_btn_01"onclick="toggle_answear('01')" class="mina-btn" style="margin-left: auto;">答え合わせ</button>
             </h3>
             <div class="exercisewindow">
               <div class="exerciseprecontainer">
-                JavaScriptは<input name="ex1" style="width: auto;">という仕様によって動作している
+                JavaScriptの実行結果を<input name="ex2-1" style="width: 150px;">を開いてブラウザで確認することができる
               </div>
-              <br>
-              <div class="exerciseprecontainer" id="check_01" style="display: none;">
-                JavaScriptは<span style="color: #059862;">ECMAScript</span>という仕様によって動作している
+              <div class="exerciseprecontainer" id="check_01" style="display: none; margin-top: 10px;">
+                JavaScriptの実行結果を<span style="color: #059862;">検証ツール</span>を開いてブラウザで確認することができる<br>
+                webブラウザごとの検証ツールの使い方<br>
+                <a href="https://www.javadrive.jp/javascript/console/index1.html" target="_blank">Chromeブラウザ</a><br>
+                <a href="https://naoya-ono.com/blog/safari-javascript-console/" target="_blank">Safariブラウザ</a><br>
+                <a href="https://developer.mozilla.org/ja/docs/Learn/Common_questions/What_are_browser_developer_tools" target="_blank">Firefox</a><br>
+                <a href="https://www.javadrive.jp/javascript/console/index4.html" target="_blank" rel="noopener noreferrer">Microsoft Edge</a><br>
               </div>
             </div>
           </div>
           <div autocomplete="off" id="mina-exerciseform" action="exercise.asp?filename=exercise_JavaScript_attributes1" method="post" target="_blank">
-            <h3 style="display: flex; align-items: center; margin-bottom: 20px;">02: 空欄を埋めてください
+            <h3 style="display: flex; align-items: center; margin-bottom: 20px;">02: コードを完成させよう
               <button id="check_btn_02"onclick="toggle_answear('02')" class="mina-btn" style="margin-left: auto;">答え合わせ</button>
             </h3>
             <div class="exercisewindow">
+              <p>xの結果をコンソール上で表示してください</p>
               <div class="exerciseprecontainer">
-                JavaScriptでは大文字小文字を<input name="ex2" style="width: auto;">
+                  // x を宣言＆初期値代入<br>
+                  let x =0;<br>
+                  // x に代入<br>
+                  x = 10 + 10;<br>
+                  // xを表示<br>
+                  <input name="ex2-1" style="width: 300px;">
               </div>
-              <br>
-              <div class="exerciseprecontainer" id="check_02" style="display: none;">
-                JavaScriptでは大文字小文字を<span style="color: #059862;">区別する</span>
+              <div class="exerciseprecontainer" id="check_02" style="display: none; margin-top: 10px;">
+                // x を宣言＆初期値代入<br>
+                let x =0;<br>
+                // x に代入<br>
+                x = 10 + 10;<br>
+                // xを表示<br>
+                <span style="color: #059862;">console.log(x);</span>
               </div>
             </div>
           </div>
           <div autocomplete="off" id="mina-exerciseform" action="exercise.asp?filename=exercise_JavaScript_attributes1" method="post" target="_blank">
-            <h3 style="display: flex; align-items: center; margin-bottom: 20px;">03: 空欄を埋めてください
+            <h3 style="display: flex; align-items: center; margin-bottom: 20px;">03: エラーを読み取ろう
               <button id="check_btn_03"onclick="toggle_answear('03')" class="mina-btn" style="margin-left: auto;">答え合わせ</button>
             </h3>
             <div class="exercisewindow">
               <div class="exerciseprecontainer">
-                文は<input name="ex3" maxlength="1" style="width: auto;">という記号で区切られる
+                "//実行コード<br>
+                console.log("hello";
+                <hr style="border-color: #333; border-style: dashed;">
+                エラー<br>
+                SyntaxError: missing ) after argument list[詳細] index.js:1:13
+                <hr style="border-color: #333; border-style: dashed;">
+                以下を答えてください<br>
+                エラーの種類: <input name="ex2-1" style="width: 500px;"><br>
+                エラーの内容: <textarea name="ex2-1" style="width: 500px; margin-bottom: 10px; vertical-align: text-top; resize: none;" rows="2"></textarea><br>
+                エラーの場所: <input name="ex2-1" style="width: 500px;"><br>
               </div>
-              <br>
-              <div class="exerciseprecontainer" id="check_03" style="display: none;">
-                文は<span style="color: #059862;">;</span>という記号で区切られる
+              <div class="exerciseprecontainer" id="check_03" style="display: none; margin-top: 10px;">
+                エラーの種類: <span style="color: #059862;">SyntaxError（構文エラー）</span><br>
+                エラーの内容: <span style="color: #059862;">引数リストの後に ) が見つからない</span><br>
+                エラーの場所: <span style="color: #059862;">index.jsファイルの1行13文字目</span><br>
+                プログラミングでつまづきやすいポイントとして、「エラーが出た時にどう対処すれば良いかわからない」<br>
+                というのがよく挙げられます。<br>
+                しかしエラー文には読み方があることだけでも知っておけばこの先エラーが出た際にも焦らずに対処ができるようになります
               </div>
             </div>
           </div>
           <div autocomplete="off" id="mina-exerciseform" action="exercise.asp?filename=exercise_JavaScript_attributes1" method="post" target="_blank">
             <h3 style="display: flex; align-items: center; margin-bottom: 20px;">04: 空欄を埋めてください
-              <button id="check_btn_04"onclick="toggle_answear('04')" class="mina-btn" style="margin-left: auto;">答え合わせ</button>
+              <button id="check_btn_04" onclick="toggle_answear('04')" class="mina-btn" style="margin-left: auto;">答え合わせ</button>
             </h3>
             <div class="exercisewindow">
               <div class="exerciseprecontainer">
-                JavaScriptではコードを安全にかけるようにする実行モードがあり、<input name="ex4-1" style="width: auto;">とコードの<input name="ex4-2" style="width: auto;">に書くことでモードを切り替えることができる
+                //実行コード<br>
+                cosnt a = 1;<br>
+                <hr style="border-color: #333; border-style: dashed;">
+                エラー<br>
+                SyntaxError: unexpected token: identifier[詳細] index.js:1:6
+                <hr style="border-color: #333; border-style: dashed;">
+                以下を答えてください<br>
+                エラーの種類: <input name="ex2-1" style="width: 500px;"> <br>
+                エラーの内容: <textarea name="ex2-1" style="width: 500px; margin-bottom: 10px; vertical-align: text-top; resize: none;" rows="2"></textarea> <br>
+                エラーの場所: <input name="ex2-1" style="width: 500px;"> <br>
               </div>
-              <br>
-              <div class="exerciseprecontainer" id="check_04" style="display: none;">
-                JavaScriptではコードを安全にかけるようにする実行モードがあり、<span style="color: #059862;">'use strict'</span>とコードの<span style="color: #059862;">先頭</span>に書くことでモードを切り替えることができる
+              <div class="exerciseprecontainer" id="check_04" style="display: none; margin-top: 10px;">
+                エラーの種類: <span style="color: #059862;">構文エラー</span> <br>
+                エラーの内容: <span style="color: #059862;">予期しない識別子です</span> <br>
+                エラーの場所: <span style="color: #059862;">index.jsの1行６文字目</span> <br>
+                このようなエラーが出た場合は、まずはタイプミスがないか・書き忘れや余分なものがないのかを確認してみましょう
               </div>
             </div>
           </div>
           <br>
+
+          <br>
           <br>
           <div class="mina-clear nextprev">
-          <a class="mina-left mina-btn" href="/JS-0.html">&#10094; はじめに</a>
-          <a class="mina-right mina-btn" href="/JS-2.html">コメント &#10095;</a>
+          <a class="mina-left mina-btn" href="/JS-3.html">&#10094; 変数の宣言</a>
+          <a class="mina-right mina-btn" href="/JS-5.html">データ型とリテラル &#10095;</a>
           </div>
+          <div id="mypagediv2" style="position:relative;text-align:center;"></div>
           <br>
         </div>
         <script>

@@ -457,7 +457,7 @@ font-family: 'Source Sans Pro', sans-serif;
 .pagemenu a:hover,.learnmore a:active {color:#000;}
 #mina-exerciseform {background-color:#282A35;padding:16px;color:#ffffff;border-radius:5px;}
 #mina-exerciseform .exercisewindow {background-color:#ffffff;padding:16px;color:#000000;}
-#mina-exerciseform .exerciseprecontainer {background-color:#E7E9EB;padding:16px;font-size:120%;font-family:Consolas,Menlo,"Courier New", Courier, monospace;overflow:auto;}
+#mina-exerciseform .exerciseprecontainer {background-color:#E7E9EB;padding:16px;font-size:120%;font-family:Consolas,Menlo,"Courier New", Courier, monospace;overflow:auto;line-height: 2;}
 #mina-exerciseform .exerciseprecontainer pre[class*="language-"] {padding:1px;}
 #mina-exerciseform .exerciseprecontainer pre {display: block;}
 #mina-exerciseform .exerciseprecontainer textarea {width:100%;border:none;overflow:hidden}
@@ -844,9 +844,6 @@ hr[id^="ez-insert-after-placeholder"] {margin-top: 0;}
   background-color:#D9EEE1;
   border-left: none;
   padding:32px;
-  margin:24px;
-  margin-left:-32px;
-  margin-right:-32px;
 }
 .mina-info .mina-btn {
   background-color:#04AA6D;
@@ -878,7 +875,7 @@ h2 {
 }
 .mina-btn:hover,.mina-btn:active,.mina-example a:focus,.nextprev a:focus {
   box-shadow: none;
-  background-color: #059862 !important;
+  opacity: .8;
 }
 .mina-btn:hover.mina-blue,.mina-btn:active.mina-blue,.mina-button:hover.mina-blue,.mina-button:active.mina-blue {
   background-color: #0d8bf2!important;color: #fff!important;
@@ -1071,7 +1068,7 @@ a.btnplayit:hover,a.btnplayit:active {background-color:#ff9900!important;color:#
 a.btnplayit:hover {box-shadow:none;}
 #mina-exerciseform {
   padding: 20px;
-  margin:32px -20px;
+  margin-bottom: 20px;
 }
 p {
   margin-top: 1.2em;

@@ -119,12 +119,12 @@
     <div class='mina-main mina-light-grey' id='belowtopnav' style='margin-left:220px; margin-bottom: 80px;'>
       <div class='mina-row mina-white'>
         <div class='mina-col l10 m12' id='main' style="margin:20px 0 0 0; margin-left: 90px;">
-          <h1>JavaScriptとは</h1>
-          <div class="mina-clear nextprev" style="margin-top: 40px;">
+          <h1>変数と宣言</h1>
+          <div class="mina-clear nextprev" style="margin-top: 40px; margin-bottom: 40px;">
           </div>
           <h3>まずはこちらをチェック</h3>
-          <div class="mina-panel mina-info intro" style="margin-bottom: 40px;">
-            <h2><a href="https://jsprimer.net/basic/introduction/" target="blank">https://jsprimer.net/basic/introduction/</a></h2>
+          <div class="mina-panel mina-info intro">
+            <h2><a href="https://jsprimer.net/basic/variables/" target="blank">https://jsprimer.net/basic/variables/</a></h2>
           </div>
           <hr>
           <h2>クイズ</h2>
@@ -134,62 +134,81 @@
             </h3>
             <div class="exercisewindow">
               <div class="exerciseprecontainer">
-                JavaScriptは<input name="ex1" style="width: auto;">という仕様によって動作している
+                JavaScriptでは変数を宣言するキーワードとして、<input name="ex1-1" style="width: 100px;">,<input name="ex1-2" style="width: 100px;">,<input name="ex1-3" style="width: 100px;">がある。
               </div>
-              <br>
-              <div class="exerciseprecontainer" id="check_01" style="display: none;">
-                JavaScriptは<span style="color: #059862;">ECMAScript</span>という仕様によって動作している
+              <div class="exerciseprecontainer" id="check_01" style="display: none; margin-top: 10px;">
+                JavaScriptでは変数を宣言するキーワードとして、<span style="color: #059862;">const</span>,<span style="color: #059862;">let</span>,<span style="color: #059862;">var</span>がある。
               </div>
             </div>
           </div>
           <div autocomplete="off" id="mina-exerciseform" action="exercise.asp?filename=exercise_JavaScript_attributes1" method="post" target="_blank">
             <h3 style="display: flex; align-items: center; margin-bottom: 20px;">02: 空欄を埋めてください
-              <button id="check_btn_02"onclick="toggle_answear('02')" class="mina-btn" style="margin-left: auto;">答え合わせ</button>
+              <button id="check_btn_02" onclick="toggle_answear('02')" class="mina-btn" style="margin-left: auto;">答え合わせ</button>
             </h3>
             <div class="exercisewindow">
               <div class="exerciseprecontainer">
-                JavaScriptでは大文字小文字を<input name="ex2" style="width: auto;">
+                <input name="ex2-1" style="width: 100px;">は再代入しない変数を宣言するキーワードで、再代入する変数の宣言には<input name="ex2-2" style="width: 100px;">を使う
               </div>
-              <br>
-              <div class="exerciseprecontainer" id="check_02" style="display: none;">
-                JavaScriptでは大文字小文字を<span style="color: #059862;">区別する</span>
+              <div class="exerciseprecontainer" id="check_02" style="display: none; margin-top: 10px;">
+                <span style="color: #059862;">const</span>は再代入しない変数を宣言するキーワードで、再代入する変数の宣言には<span style="color: #059862;">let（またはvar）</span>を使う
               </div>
             </div>
           </div>
           <div autocomplete="off" id="mina-exerciseform" action="exercise.asp?filename=exercise_JavaScript_attributes1" method="post" target="_blank">
             <h3 style="display: flex; align-items: center; margin-bottom: 20px;">03: 空欄を埋めてください
-              <button id="check_btn_03"onclick="toggle_answear('03')" class="mina-btn" style="margin-left: auto;">答え合わせ</button>
+              <button id="check_btn_03" onclick="toggle_answear('03')" class="mina-btn" style="margin-left: auto;">答え合わせ</button>
             </h3>
             <div class="exercisewindow">
               <div class="exerciseprecontainer">
-                文は<input name="ex3" maxlength="1" style="width: auto;">という記号で区切られる
+                <input name="ex3-1" style="width: 100px;">は再代入できる変数だが、<input name="ex3-2" style="width: 100px;">と違い同じ名前で再宣言できてしまう。
               </div>
-              <br>
-              <div class="exerciseprecontainer" id="check_03" style="display: none;">
-                文は<span style="color: #059862;">;</span>という記号で区切られる
+              <div class="exerciseprecontainer" id="check_03" style="display: none; margin-top: 10px;">
+                <span style="color: #059862;">var</span>は再代入できる変数だが、<span style="color: #059862;">let</span>と違い同じ名前で再宣言できてしまう。
               </div>
             </div>
           </div>
           <div autocomplete="off" id="mina-exerciseform" action="exercise.asp?filename=exercise_JavaScript_attributes1" method="post" target="_blank">
             <h3 style="display: flex; align-items: center; margin-bottom: 20px;">04: 空欄を埋めてください
-              <button id="check_btn_04"onclick="toggle_answear('04')" class="mina-btn" style="margin-left: auto;">答え合わせ</button>
+              <button id="check_btn_04" onclick="toggle_answear('04')" class="mina-btn" style="margin-left: auto;">答え合わせ</button>
             </h3>
             <div class="exercisewindow">
               <div class="exerciseprecontainer">
-                JavaScriptではコードを安全にかけるようにする実行モードがあり、<input name="ex4-1" style="width: auto;">とコードの<input name="ex4-2" style="width: auto;">に書くことでモードを切り替えることができる
+                <input name="ex4" style="width: 100px;">は昔のコードへの互換性のために存在するので、新しくコードを書くときには推奨されていない
               </div>
-              <br>
-              <div class="exerciseprecontainer" id="check_04" style="display: none;">
-                JavaScriptではコードを安全にかけるようにする実行モードがあり、<span style="color: #059862;">'use strict'</span>とコードの<span style="color: #059862;">先頭</span>に書くことでモードを切り替えることができる
+              <div class="exerciseprecontainer" id="check_04" style="display: none; margin-top: 10px;">
+                <span style="color: #059862;">var</span>は昔のコードへの互換性のために存在するので、新しくコードを書くときには推奨されていない
+                <br>なぜ推奨されていないかは<a href="https://jsprimer.net/basic/variables/#var-issues" target="_blank">こちら(varの問題)</a>をチェック
+              </div>
+            </div>
+          </div>
+          <div autocomplete="off" id="mina-exerciseform" action="exercise.asp?filename=exercise_JavaScript_attributes1" method="post" target="_blank">
+            <h3 style="display: flex; align-items: center; margin-bottom: 20px;">05: 空欄を埋めてください
+              <button id="check_btn_05" onclick="toggle_answear('05')" class="mina-btn" style="margin-left: auto;">答え合わせ</button>
+            </h3>
+            <div class="exercisewindow">
+              <div class="exerciseprecontainer">
+                変数の名前には３つのルールがある<br>
+                1. 半角のアルファベット,<input name="ex5-1" style="width: 100px;">,<input name="ex5-2" style="width: 100px;">,数字を組み合わせた名前にする<br>
+                2. <input name="ex5-3" style="width: 100px;">から始めることはできない<br>
+                3. <input name="ex5-4" style="width: 100px;">とかぶる名前は使えない
+              </div>
+              <div class="exerciseprecontainer" id="check_05" style="display: none; margin-top: 10px;">
+                "変数の名前には３つのルールがある<br>
+                1. 半角のアルファベット,<span style="color: #059862;">_</span>,<span style="color: #059862;">$</span>,数字を組み合わせた名前にする<br>
+                2. <span style="color: #059862;">数字</span>から始めることはできない<br>
+                3. <span style="color: #059862;">予約語</span>とかぶる名前は使えない"
               </div>
             </div>
           </div>
           <br>
+
+          <br>
           <br>
           <div class="mina-clear nextprev">
-          <a class="mina-left mina-btn" href="/JS-0.html">&#10094; はじめに</a>
-          <a class="mina-right mina-btn" href="/JS-2.html">コメント &#10095;</a>
+          <a class="mina-left mina-btn" href="/JS-2.html">&#10094; コメント</a>
+          <a class="mina-right mina-btn" href="/JS-4.html">値の評価と表示 &#10095;</a>
           </div>
+          <div id="mypagediv2" style="position:relative;text-align:center;"></div>
           <br>
         </div>
         <script>

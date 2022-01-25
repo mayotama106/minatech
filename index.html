@@ -1,0 +1,255 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>JavaScriptとは・MINATECH JavaScript</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="Keywords" content="HTML, Python, CSS, JavaScript">
+<meta name="Description" content="">
+<meta property="og:image" content="">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="436">
+<meta property="og:image:height" content="228">
+<meta property="og:title" content="">
+<meta property="og:description" content="">
+<link rel="icon" href="../images/minatech_icon@2x.png" type="image/x-icon">
+<link rel="stylesheet" href="../css/main.css">
+<link rel ="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="../css/index.css">
+</head>
+
+<body style="position:relative;min-height:100%;font-family: 'Source Sans Pro', sans-serif;">
+
+<div style='display:none;position:absolute;z-index:6;top:75px;right:0;height:75px;padding-top:22px;padding-right:20px;padding-left:20px;background-color:#F9C61F;' id='googleSearch'><div class='gcse-search'></div></div>
+<div style='display:none;position:absolute;z-index:5;top:75px;right:0;height:75px;padding-right:15px;background-color:#F9C61F;text-align:right;padding-top:25px;' id='google_translate_element'></div>
+
+<div class="mina-bar mina-card-2 notranslate" style="padding-left:12px;padding-right:16px; position: sticky; top: 0; background-color: #fff; z-index: 99;">
+  <a href="index.html" class="mina-bar-item mina-button mina-hover-none mina-left mina-padding-16" title="Home" style="width:300px; margin-top: 5px;">
+    <img src="../images/minatech_logo@2x.png" style="width:100%;" alt="">
+  </a>
+
+  <!-- <a class="mina-bar-item mina-button mina-hide-small barex bar-item-hover mina-padding-24" href="javascript:void(0)" onclick="mina_open_nav('tutorials')" id="navbtn_tutorials" title="Tutorials" style="width:70px">基礎 <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style="display:none"></i></a> -->
+  <!-- <a class="mina-bar-item mina-button mina-hide-small barex bar-item-hover mina-padding-24 c-hide-800" href="javascript:void(0)" onclick="mina_open_nav('exercises')" id="navbtn_exercises" title="Exercises" style="width:118px">開発実践 <i class='fa fa-caret-down' style="font-size:20px;"></i><i class='fa fa-caret-up' style="display:none"></i></a> -->
+  <!-- <a class="mina-bar-item mina-button mina-hide-small barex bar-item-hover mina-padding-24 c-hide-800" href="javascript:void(0)" onclick="mina_open_nav('')" id="navbtn_exercises" title="Exercises" style="width:70px">tips <i class='fa fa-caret-down' style="font-size:20px;"></i><i class='fa fa-caret-up' style="display:none"></i></a> -->
+
+  <a class="mina-bar-item mina-button bar-item-hover mina-padding-24" href="javascript:void(0)" onclick="mina_open()" id="navbtn_menu" title="Menu" style="width:93px">Menu <i class='fa fa-caret-down'></i><i class='fa fa-caret-up' style="display:none"></i></a>
+
+</div>
+
+<nav id="nav_tutorials" class="mina-hide-small navex" style="position:absolute;background-color:#282A35;color:white;padding-bottom:60px;">
+ <div class="mina-content" style="max-width:1100px;font-size:18px">
+ <span onclick="mina_close_nav('tutorials')" class="mina-button mina-xxxlarge mina-display-topright mina-hover-white" style="padding-right:30px;padding-left:30px;">&times;</span><br>
+ <div class="mina-row-padding mina-bar-block">
+  <div class="mina-container" style="padding-left:13px">
+   <h2 style="color:#FFF4A3;"><b>基礎</b></h2>
+  </div>
+  <div class="mina-col l3 m6">
+   <h3 class="mina-margin-top" style="display: none;"><a href="">まずはここから</a></h3>
+   <h3 class="mina-margin-top"><a href="basic/JS-00-Introduction.html">javascript</a></h3>
+  </div>
+ </div>
+ </div>
+</nav>
+
+<!-- <nav id="nav_references" class="mina-hide-small navex" style="position:absolute;background-color:#282A35;color:white;padding-bottom:60px; display: none;">
+ <div class="mina-content" style="max-width:1100px;font-size:18px">
+ <span onclick="mina_close_nav('references')" class="mina-button mina-xxxlarge mina-display-topright mina-hover-white" style="padding-right:30px;padding-left:30px;">&times;</span><br>
+ <br class="hidesm">
+ </div>
+</nav> -->
+
+<!-- <nav id="nav_exercises" class="mina-hide-small navex" style="position:absolute;background-color:#282A35;color:white;padding-bottom:60px;">
+ <div class="mina-content" style="max-width:1100px;font-size:18px">
+ <span onclick="mina_close_nav('exercises')" class="mina-button mina-xxxlarge mina-display-topright mina-hover-white" style="padding-right:30px;padding-left:30px;">&times;</span><br>
+ <div class="mina-row-padding mina-bar-block">
+ <div class="mina-container" style="padding-left:13px">
+   <h2 style="color:#FFF4A3;"><b>開発実践</b></h2>
+  </div>
+  <div class="mina-col l3 m6">
+   <a class="mina-bar-item mina-button" href="/JavaScript/JavaScript_exercises.asp">JavaScript</a>
+  </div>
+ </div>
+ <br class="hidesm">
+ </div>
+</nav> -->
+
+<!-- MAIN -->
+<div class="mina-main" id="main">
+
+<div class="mina-row mina-padding-32 c-black" style="display: none;">
+  <div class="mina-content" style="max-width:1400px">
+    <div class="mina-col l6 mina-center" style="padding:3%;">
+      <h1 style="font-size:85px;font-weight:700;margin-top:20px!important;">まずはここから</h1>
+      <p style="font-size:20px; line-height: 2; margin-bottom: 40px;">プログラミングとはなんなのか<br>どういったことができるようになるのかを確認</p>
+      <a href="/html/default.asp" class="mina-button tut-button" style="margin-bottom:2px;">はじめる</a><br>
+    </div> 
+    <div class="mina-col l6" style="padding:3%">
+      <div class="mina-hide-small grey-color mina-card-2 mina-round" style="padding:16px;">
+        <h3>CODE :</h3>
+        <div class="mina-code htmlHigh notranslate green-border">
+          &lt;!DOCTYPE html&gt;<br>
+          &lt;html&gt;<br>
+          &lt;title&gt;HTML Tutorial&lt;/title&gt;<br>
+          &lt;body&gt;<br><br>
+          &lt;h1&gt;This is a heading&lt;/h1&gt;<br>
+          &lt;p&gt;This is a paragraph.&lt;/p&gt;<br><br>
+          &lt;/body&gt;<br>
+          &lt;/html&gt;
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="mina-row mina-padding-32 c-yellow">
+  <div class="mina-content" style="max-width:1400px">
+    <div class="mina-col l6 mina-center" style="padding:3%">
+      <h1 style="font-size:100px;font-weight:700">JavaScript</h1>
+      <p style="font-size:20px; margin-bottom: 40px;">JavaScriptの基礎を学習しよう</p>
+      <a href="./JS-00-Introduction.html" class="mina-button mina-block tut-button black">はじめる</a><br>
+    </div>
+    <div class="mina-col l6" style="padding:3%">
+      <div class="mina-hide-small mina-card-2 grey-color mina-round" style="padding:16px;">
+        <h3>JavaScript :</h3>
+        <div class="mina-code notranslate green-border">
+          <div class="htmlHigh">
+            &lt;button onclick=&quot;hello()&quot;&gt;アイサツ&lt;/button&gt;<br>
+            &lt;p id=&quot;demo&quot;&gt;&lt;/p&gt;
+            <br>
+            <br>
+            &lt;script&gt;<br>
+            function hello() {<br>
+                &nbsp; let hello = document.getElementById(&quot;demo&quot;);<br>
+            &nbsp; hello.textContent = &quot;こんにちは！&quot;; <br>
+            &nbsp; hello.style.fontSize = &quot;50px;&quot; <br>}<br>
+            &lt;/script&gt;
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="mina-row mina-padding-32 c-white" style="display: none;">
+  <div class="mina-content" style="max-width:1400px">
+    <div class="mina-col l6 mina-center" style="padding:3%">
+      <h1 style="font-size:70px;font-weight:700;margin-bottom:18px!important">JavaScript 発展</h1>
+      <p style="font-size:19px">web上で動くアプリケーションを作ってみよう</p>
+      <a href="/js/default.asp" class="mina-button mina-block tut-button">はじめる</a><br>
+    </div>
+    <div class="mina-col l6" style="padding:3%">
+      <div class="mina-hide-small mina-card-2 grey-color mina-round" style="padding:16px;">
+        <h3>JavaScript :</h3>
+        <div class="mina-code notranslate green-border">
+          <div class="htmlHigh">
+            &lt;button onclick=&quot;myFunction()&quot;&gt;Click Me!&lt;/button&gt;<br><br>
+            &lt;script&gt;<br>
+            function myFunction() {<br>
+                &nbsp; let x = document.getElementById(&quot;demo&quot;);<br>
+            &nbsp; x.style.fontSize = &quot;25px&quot;; <br>
+            &nbsp; x.style.color = &quot;red&quot;; <br>}<br>
+            &lt;/script&gt;
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<footer class="mina-container mina-center mina-padding-32 c-black">
+ <div class="mina-container" style="margin-bottom: 40px;">
+   <h2 style="color: #ddd;">みなさまへ</h2>
+   <h4 style="color: #ddd; line-height: 3;">
+    初めまして！MINATECH運営のてる（<a href="https://twitter.com/mayo_teruo">@mayo_teruo</a>）です！<br>
+    僕は想像を形にできる人が増えることで、世の中はもっと今よりも面白くなっていくと信じています。<br>
+    クリエイティブを発揮する強力なツールとしてプログラミングをたくさんの人に使って欲しい<br>そう思いMINATECHを立ち上げました。<br>
+    僕もサービスもまだまだ未熟ではありますが、みなさまの少しでも力になれたなら嬉しいです！
+  </h4>
+ </div>
+ <a href="" class="">&copy; minatech 2021</a></p>
+ </div>
+</footer>
+
+<!-- END MAIN -->
+</div>
+
+<script>
+function openLangTab(evtEd, codeName) {
+  var indexEditor, proglanguage, progtablinks;
+  proglanguage = document.getElementsByClassName("proglang");
+  for (indexEditor = 0; indexEditor < proglanguage.length; indexEditor++) {
+    proglanguage[indexEditor].style.display = "none";
+  }
+  progtablinks = document.getElementsByClassName("codeeditorbr-tablink");
+  for (indexEditor = 0; indexEditor < proglanguage.length; indexEditor++) {
+    progtablinks[indexEditor].className = progtablinks[indexEditor].className.replace(" c-grey", "");
+  }
+  document.getElementById(codeName).style.display = "block";
+  evtEd.currentTarget.className += " c-grey";
+}
+
+function mina_open() {
+  var x = document.getElementById("myAccordion");
+  if (x.style.display === 'none') {
+    x.style.display = 'block';
+    if (document.getElementById("navbtn_menu")) {
+      document.getElementById("navbtn_menu").getElementsByTagName("i")[0].style.display = "none";
+      document.getElementById("navbtn_menu").getElementsByTagName("i")[1].style.display = "inline";
+    }
+  } else {
+    x.style.display = 'none';
+    if (document.getElementById("navbtn_menu")) {
+      document.getElementById("navbtn_menu").getElementsByTagName("i")[0].style.display = "inline";
+      document.getElementById("navbtn_menu").getElementsByTagName("i")[1].style.display = "none";
+    }
+  }
+}
+function mina_close() {
+  document.getElementById("myAccordion").style.display = "none";
+}
+function open_xs_menu(x) {
+  if (document.getElementById("sectionxs_" + x).innerHTML == "") {
+    document.getElementById("sectionxs_" + x).innerHTML = document.getElementById("nav_" + x).innerHTML;
+  } else {
+    document.getElementById("sectionxs_" + x).innerHTML = "";
+  }
+}
+function mina_open_nav(x) {
+  if (document.getElementById("nav_" + x).style.display == "block") {
+    mina_close_nav(x);
+  } else {
+    mina_close_nav("tutorials");
+    mina_close_nav("references");
+    mina_close_nav("exercises");
+    document.getElementById("nav_" + x).style.display = "block";
+    if (document.getElementById("navbtn_" + x)) {
+      document.getElementById("navbtn_" + x).getElementsByTagName("i")[0].style.display = "none";
+      document.getElementById("navbtn_" + x).getElementsByTagName("i")[1].style.display = "inline";
+      document.getElementById("navbtn_" + x).classList.add("mystyle");
+    } 
+    if (x == "search") {
+      if (document.getElementById("gsc-i-id1")) {document.getElementById("gsc-i-id1").focus(); }
+    }
+  }
+}
+function mina_close_all_nav() {
+  mina_close_nav("tutorials");
+  mina_close_nav("references");
+  mina_close_nav("exercises");
+  mina_close();
+}
+function mina_close_nav(x) {
+  document.getElementById("nav_" + x).style.display = "none";
+  if (document.getElementById("navbtn_" + x)) {
+    document.getElementById("navbtn_" + x).getElementsByTagName("i")[0].style.display = "inline";
+    document.getElementById("navbtn_" + x).getElementsByTagName("i")[1].style.display = "none";
+    document.getElementById("navbtn_" + x).classList.remove("mystyle");
+  }
+}
+
+</script>
+
+</body>
+</html>

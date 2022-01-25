@@ -1417,13 +1417,13 @@ SyntaxError: redeclaration of const bookTitle
                 <pre><code class="lang-javascript"><span class="hljs-number">1</span>;
 </code></pre>
                 <p>
-                  次にHTMLファイルとして<code>index.html</code>ファイルを<code>example/index.html</code>というパスに作成します。
+                  次にHTMLファイルとして<code>../index.html</code>ファイルを<code>example/../index.html</code>というパスに作成します。
                   このHTMLファイルから先ほど作成した<code>index.js</code>ファイルを読み込み実行します。
-                  <code>index.html</code
+                  <code>../index.html</code
                   >の中には次のようなコードを書いておきます。
                 </p>
                 <div class="code-filename-block">
-                  <p class="code-filename">index.html</p>
+                  <p class="code-filename">../index.html</p>
                 </div>
 
                 <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
@@ -1443,7 +1443,7 @@ SyntaxError: redeclaration of const bookTitle
                   これは同じディレクトリにある<code>index.js</code>という名前のJavaScriptファイルをスクリプトとして読み込むという意味になります。
                 </p>
                 <p>
-                  最後にブラウザで作成した<code>index.html</code>を開きます。
+                  最後にブラウザで作成した<code>../index.html</code>を開きます。
                   HTMLファイルを開くには、ブラウザにHTMLファイルをドラッグアンドドロップするかまたはファイルメニューから&quot;ファイルを開く&quot;でHTMLファイルを選択します。
                   HTMLファイルを開いた際に、ブラウザのアドレスバーには<code>file:///</code>からはじまるローカルファイルのファイルパスが表示されます。
                 </p>
